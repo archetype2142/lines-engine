@@ -30,7 +30,7 @@ module Lines
 
     initializer 'lines.action_controller' do |app|
       ActiveSupport.on_load :action_controller_base do
-        helper Lines::ApplicationHelper
+        helper ::Lines::ApplicationHelper
       end
     end
 
